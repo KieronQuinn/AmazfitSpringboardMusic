@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spring_depend">
+        <item>com.kieronquinn.app.springboardmusic/com.kieronquinn.app.springboardmusic.SpringboardPage</item>
+    </string-array>
+</resources>

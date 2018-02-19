@@ -1,0 +1,8 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/button_small_shadow" />
+    <item
+        android:bottom="4px"
+        android:drawable="@drawable/button_small_round" />
+
+</layer-list>

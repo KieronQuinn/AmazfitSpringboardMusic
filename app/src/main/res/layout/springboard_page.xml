@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/container"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_height="match_parent">
+        <com.kieronquinn.app.springboardmusic.AlwaysMarqueeTextView
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            tools:text="Artist"
+            android:id="@+id/artist"/>
+        <com.kieronquinn.app.springboardmusic.AlwaysMarqueeTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/music"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:singleLine="true"
+            android:id="@+id/track"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <ImageButton
+                android:id="@+id/skipPrev"
+                android:layout_width="42dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="4dp"
+                android:foreground="?selectableItemBackground"
+                android:background="@drawable/button_small_layer_list"
+                android:src="@drawable/skip_previous" />
+            <ImageButton
+                android:id="@+id/playPause"
+                android:layout_width="56dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:foreground="?selectableItemBackground"
+                android:background="@drawable/button_layer_list"
+                android:src="@drawable/play" />
+            <ImageButton
+                android:id="@+id/skipNext"
+                android:layout_width="42dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="4dp"
+                android:foreground="?selectableItemBackground"
+                android:background="@drawable/button_small_layer_list"
+                android:src="@drawable/skip_next" />
+        </LinearLayout>
+
+
+
+        <com.kieronquinn.app.springboardmusic.AlwaysMarqueeTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_horizontal"
+            android:singleLine="true"
+            tools:text="Album"
+            android:id="@+id/album"/>
+    </LinearLayout>
+
+
+    <com.kieronquinn.app.springboardmusic.AlwaysMarqueeTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:singleLine="true"
+        android:paddingBottom="8dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        tools:text="Player"
+        android:layout_gravity="bottom"
+        android:textColor="?android:textColorSecondary"
+        android:id="@+id/player"/>
+
+    <com.kieronquinn.app.springboardmusic.ProgressArc
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/progress"/>
+
+    <com.kieronquinn.app.springboardmusic.ProgressArc
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:id="@+id/volumeArc"/>
+
+</FrameLayout>
